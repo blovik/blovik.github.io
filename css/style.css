@@ -1,0 +1,478 @@
+
+
+h1 {
+    font-family: quicksand-bold, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+	color: #008CBE;
+    text-shadow: 0px 1px 1px #000000;
+    /*color: #ffffff;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);*/
+}
+
+
+/*================== sections ====================*/
+
+h4 {
+    font-family: quicksand, sans-serif;
+    font-size: 1.25em;
+    color: #333;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+}
+
+.content {
+    font-family: quicksand, sans-serif;
+    padding: 0 40px;
+}
+
+.content p {
+    line-height: 50px;
+    font-size: 1.2em;
+}
+
+.highlight span {
+    display: inline-block;
+    background-color: red;
+}
+
+/*============= professional summary ===========*/
+
+.prof {
+    font-size: 4em;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+        
+    -webkit-transition-property: -webkit-transform; 
+    -moz-transition-property: -moz-transform; 
+    -o-transition-property: -o-transform; 
+    transition-property: transform;
+        
+    overflow: hidden;
+}
+
+.prof:hover {
+    color: #ffffff;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.prof i:hover {
+    color: #008CBE;
+}
+
+/*================ experience ==================*/
+
+.experience {
+    background-image: url("../img/experience.png");
+    background-size: cover;
+    background-color: #cccccc;
+    background-repeat: no-repeat;  
+    background-attachment: scroll;  
+    background-position: center center;
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+}
+
+
+/*================== skills ====================*/
+
+pre {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0 5px 20px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+span.red {
+    color: #F92772;
+}
+
+span.yellow {
+    color: #E6DB70;
+}
+
+span.blue {
+    color: #61D9EF;
+}
+
+/*================ more information ==================*/
+
+i:hover {
+    text-shadow: 0px 0px 0px #ffffff;
+}
+
+/*================== busines card ====================*/
+
+#imgBottom {
+    margin-top: -35px;
+    margin-bottom: 10px;
+    border: 3px solid #ffffff;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+.card {
+    height: 200px;
+    margin-top: 20px;
+}
+
+/*================== education ====================*/
+
+.ed {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+.ed h5 {
+    font-family: quicksand, sans-serif;
+    font-size: 1.25em;
+}
+
+.ed p {
+    padding-left: 40px;
+}
+
+.school {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0 transparent;
+}
+
+.school2 {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    margin-right: 20px;
+    height: 100px;
+    width: 225px;
+    box-shadow: 0 0 0 transparent;
+}
+
+.school3 {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    margin-right: 20px;
+    height: 100px;
+    width: 160px;
+    box-shadow: 0 0 0 transparent;
+}
+
+/*==================== examples ===================*/
+
+.examples {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/*================== better example ================*/
+
+.trendy {
+    margin: 40px 50px 0px 50px;
+}
+
+#busCard {
+    height: 450px;
+    width: 600px;
+}
+
+/*================== top & bottom =================*/
+
+.contactTop {
+    font-family: quicksand, sans-serif;
+    font-size: 3em;
+	background-color: #008CBE;
+	color: #ffffff;
+    padding-top: 20px;
+    text-shadow: 0px 1px 1px #000000;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-bottom: 1px solid #000000;
+}
+
+.contactTop p {
+    font-size: .35em;
+}
+
+.contactBottom {
+    font-family: quicksand, sans-serif;
+    font-size: 60px;
+    background-color: #008CBE;
+    color: #ffffff;
+    padding: 0 20px;
+    border-radius: 4px;
+    border-radius: 4px;
+    border-bottom: 1px solid #000000;
+    /*padding-top: 20px;*/
+}
+
+.contactBottom p {
+    font-size: .6em;
+}
+
+.rotate {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+        
+    -webkit-transition-property: -webkit-transform; 
+    -moz-transition-property: -moz-transform; 
+    -o-transition-property: -o-transform; 
+    transition-property: transform;
+        
+    overflow: hidden;
+}  
+ 
+.rotate:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}  
+
+/*==================== a ======================*/
+
+a:link {
+    font-family: quicksand, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px #000000;
+}
+
+a:visited {
+    font-family: quicksand, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px #000000;
+}
+
+a:hover {
+    font-family: quicksand, sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+    text-shadow: 0px 2px 1px #000000;
+}
+
+a:active {
+    font-family: quicksand, sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+    text-shadow: 0px 1px 1px #000000;
+}
+
+/*==================== fi icons ======================*/
+
+.fi-social-facebook {
+    font-size: 100px;
+    color: #43609C;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fi-social-twitter {
+    font-size: 100px;
+    color: #31AAF3;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fi-social-linkedin {
+    font-size: 100px;
+    color: #0075BA;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fi-like {
+    font-size: 100px;
+    color: #03E604;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fi-torso-business {
+    font-size: 100px;
+    color: #03B603;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+/*==================== toggle ======================*/
+
+.toggle-box {
+    margin: 0px;
+}
+
+.toggle-box p {
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-title {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #EFEFEF;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.toggle-title:hover,
+.toggle-title:active {
+    background: #E3E3E3;
+    text-shadow: 0px 1px 1px #ffffff;
+}
+
+.active {
+    background: #008CC2;
+    color: #000000;
+}
+
+.toggle-title a {
+    color: #111;
+}
+
+.toggle-content {
+    padding-bottom: 20px;
+}
+
+/*==================== Trendy ======================*/
+
+.hero {
+    height: 500px;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+    background-repeat: no-repeat;  
+    background-attachment: scroll;  
+    background-position: center center;
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+}
+
+#hero {
+    font-family: quicksand-bold, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 5em;
+    text-shadow: 1px 0px 1px #000000;
+}
+
+.rideBody {
+    background-color: #000000;
+    height: 500px;
+}
+
+#contact {
+    display: none;
+    background-color: #008CBE;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+}
+
+.contactTitle {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.contactP {
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.goBack {
+    height: 125px;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 3em;
+}
+
+#pictures {
+    display: block;
+    background-color: #000000; 
+}
+
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#ride {
+    display: none;
+}
+
+#follow {
+    display: none;
+}
+
+#join {
+    display: none;
+}
+
+#calendar {
+    display: none;
+}
+
+#join {
+    background-color: #008CBE;
+}
+
+#join label {
+    color: #ffffff;
+}
+
+#follow {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+form {
+    padding-bottom: 1px;
+}
+
+legend {
+    background-color: #008CBE !important;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
