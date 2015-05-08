@@ -1,0 +1,241 @@
+body {
+	background-image: url("../img/coffee-bean-background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	font-family: 'Poiret One', cursive;
+    padding: 0pt;
+    margin: 0pt;
+}
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Poiret One', cursive;
+}
+#logo {
+	width: 50%;
+}
+.page {
+	min-height: 82%;
+}
+
+/*======================================
+=============home section==============*/
+.home1 {	
+	margin-top: 5%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	min-height: 65%;
+}
+.home2 {
+	margin-top: 0;
+	padding-top: 0;
+	min-height: 17%;
+}
+.drop {
+    float: left;
+    position: fixed;
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    margin-top: 0;
+    z-index: 500;   
+}
+.sub-nav dd {
+    font-family: 'Poiret One', cursive;
+}
+
+/*======================================
+============about section==============*/
+.about {
+	margin-top: 25px;
+}
+.about>div {
+	min-height: 100%;
+	color: #ffffff;
+}
+.transb {
+	background-color: #000000;
+	opacity: .7;
+	padding: 0 15px 10px 15px;
+	border-radius: 20px;
+	color: #ffffff;
+}
+.transb h2 {
+	color: #ffffff;
+	text-shadow: 1px 1px 9px #000000;
+}
+ul#thinner {
+	width: 60%;
+}
+.about h2 {
+	color: #ffffff;
+}
+
+/*======================================
+============types section==============*/
+.types {
+	margin-top: 30px;
+	background-color: #ffffff;
+	opacity: .9;
+	border-radius: 20px;
+}
+.view img {
+    height: 100%;
+}
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*buttons have their own section below*/
+
+/*======================================
+============location section===========*/
+.location {
+	min-height: 100%;
+	background-image: url("../img/Fresno.jpg");
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*color: #ffffff;*/
+}
+.map {
+	margin-top: 40px;
+	height: 25%;
+	padding: 50px 0;
+}
+.map2 {
+	background-color: #000000;
+	opacity: .7;
+	border-radius: 20px;
+}
+.map2 p, h3, h5 {
+	color: #ffffff;
+}
+.subnav {
+	background-color: red;
+}
+
+/*================================
+=============Footer==============*/
+footer {
+    background-color: #ffffff;
+}
+
+/*================================
+==========Types Buttons==========*/
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+.mask, .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px 20px 0px 0px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 25px 20px 5px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px 7px 0px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.view img { 
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+.view .mask { 
+    background-color: rgba(255, 231, 179, 0.3); 
+    transition: all 0.5s linear;
+    opacity: 0;
+}	
+.view h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #333;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.view p {
+    color: #333;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.view a.info { 
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.view:hover img { 
+	transform: scale(10);
+    opacity: 0;
+}
+.view:hover .mask { 
+	opacity: 1;
+}																			 
+.view:hover h2,
+.view:hover p,
+.view:hover a.info{ 
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*======================================
+=============== @ media ===============*/
+
+@media only screen and (max-width: 40em) { 
+    #logo {
+    width: 100%;
+    }
+}
+@media only screen and (min-width: 40.063em) { 
+    #logo {
+    width: 75%;
+    }
+}
+@media only screen and (min-width: 64.063em) { 
+    #logo {
+    width: 60%;
+    }
+}
+
