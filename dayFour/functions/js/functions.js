@@ -14,7 +14,7 @@ function add() {
 	document.getElementById("expression").innerHTML = 
 	a + " + " + b + " + " + c + " + " + c + " + " + e + " = " + answer;
 	document.getElementById("tbl2").innerHTML = "Brought to you by Table Two (<em>All rights reserved</em>)"
-
+	document.getElementById("goBack").innerHTML = "<button onclick=\"document.location='../index.html'\">Return</button>"
 }
 
 // ============ edge casing =================
