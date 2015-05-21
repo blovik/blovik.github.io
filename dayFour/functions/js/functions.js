@@ -1,5 +1,3 @@
-alert("!");
-
 function add() {
 	var e = 0;
 	var a = document.getElementById("addend1").value;
