@@ -16,3 +16,26 @@ function add() {
 	document.getElementById("tbl2").innerHTML = "Brought to you by Table Two (<em>All rights reserved</em>)"
 
 }
+
+// ============ edge casing =================
+
+
+function edge() {
+	while(isNaN(numOne)) {
+	var numOne = prompt("Enter your FIRST addend");
+	var numOne = parseInt(numOne);
+	}
+
+	while(isNaN(numTwo)) {
+	var numTwo = prompt("Enter your SECOND addend");
+	var numTwo = parseInt(numTwo);
+	}
+
+	var answer = numOne + numTwo;
+		
+	alert(numOne + " + " + numTwo + " = " + answer);
+}
+
+
+
+
