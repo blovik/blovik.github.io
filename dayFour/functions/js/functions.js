@@ -61,7 +61,7 @@ function dyno() {
 	numbers = numbers.split(" "); //creates an array
 
 	for (i = 0; i < howMany; i++) {
-	    numbers[i] = parseInt(numbers[i]);
+	    numbers[i] = parseFloat(numbers[i]);
 		answer2 += numbers[i];
 	}
 
