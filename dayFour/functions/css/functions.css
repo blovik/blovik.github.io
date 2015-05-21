@@ -28,8 +28,13 @@ h2 {
     transform: rotate(10deg);
 }
 
+button.skill {
+	width: 30em;
+	height: 5em;
+}
+
 .btn {
-	 background-color: #03B388;
+	background-color: #03B388;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius:10px;
