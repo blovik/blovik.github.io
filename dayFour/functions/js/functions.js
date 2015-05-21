@@ -50,4 +50,23 @@ function recap(){
 	}
 }
 
+// =========== dynamic functions ===========
 
+function dyno() {
+	var numbers = prompt("Enter numbers to add:\nRULES:\n- ONE space separating numbers\n- NO space at the end\n- Numbers only");
+	var howMany;
+	var answer2 = 0;
+
+	howMany = numbers.split(" ").length; //count the spaces
+	numbers = numbers.split(" "); //creates an array
+
+	for (i = 0; i < howMany; i++) {
+	    numbers[i] = parseInt(numbers[i]);
+		answer2 += numbers[i];
+	}
+
+	isNaN(answer2) ? 
+		alert("You didn't follow the rules. Try again.")
+		 :
+	alert("The sum of your numbers is: " + answer2);
+}
