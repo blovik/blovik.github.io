@@ -33,6 +33,11 @@ button.skill {
 	height: 5em;
 }
 
+button.back:hover {
+	background-color: #03B388;
+	color: #ffffff;
+}
+
 .btn {
 	background-color: #03B388;
     -moz-border-radius: 10px;
