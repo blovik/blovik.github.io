@@ -36,6 +36,17 @@ function edge() {
 	alert(numOne + " + " + numTwo + " = " + answer);
 }
 
+// ============== recap ==============
 
+function recap(){
+	var toDo = prompt("What do you want to do?");
+	var notify = confirm("Do you want an alert?");
+	
+	if (notify == true) {
+		alert(toDo);
+	} else {
+		alert("console.log(toDo)");
+	}
+}
 
 
