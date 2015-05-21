@@ -1,0 +1,30 @@
+* {
+	color: #03B388;
+}
+
+h1 {
+	font-family: Arial, san-serif;
+	text-shadow: 1px 1px 5px black;
+	
+}
+
+h2 {
+	font-size: 4em;
+	text-shadow: 1px 1px 5px black;
+}
+
+.container {
+	position: relative;
+	top: 100px;
+	//left: 200px;
+	text-align: center;
+	-ms-transform: translate(50px,100px); /* IE 9 */
+   	-webkit-transform: translate(50px,100px); /* Safari */
+    transform: translate(50px,100px);
+	-ms-transform: translate(50px,100px); /* IE 9 */
+   	-webkit-transform: translate(50px,100px); /* Safari */
+    transform: translate(50px,100px);
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
