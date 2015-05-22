@@ -26,12 +26,12 @@ function add() {
 function edge() {
 	while(isNaN(numOne)) {
 	var numOne = prompt("Enter your FIRST addend");
-	var numOne = parseInt(numOne);
+	var numOne = parseFloat(numOne);
 	}
 
 	while(isNaN(numTwo)) {
 	var numTwo = prompt("Enter your SECOND addend");
-	var numTwo = parseInt(numTwo);
+	var numTwo = parseFloat(numTwo);
 	}
 
 	var answer = numOne + numTwo;
