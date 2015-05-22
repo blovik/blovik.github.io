@@ -1,3 +1,5 @@
+// =========== functions ===========
+
 function add() {
 	var e = 0;
 	var a = document.getElementById("addend1").value;
@@ -57,8 +59,9 @@ function dyno() {
 	var howMany;
 	var answer2 = 0;
 
-	howMany = numbers.split(" ").length; //count the spaces
+	//howMany = numbers.split(" ").length; //count the spaces
 	numbers = numbers.split(" "); //creates an array
+	howMany = numbers.length;
 
 	for (i = 0; i < howMany; i++) {
 	    numbers[i] = parseFloat(numbers[i]);
