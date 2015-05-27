@@ -23,8 +23,8 @@ function makeItHappen() {
 			endAt = document.getElementById("startNumber").value;
 		}
 	}
-	alert("starting at " + startAt);
-	alert("ending at " + endAt);
+	//alert("starting at " + startAt);
+	//alert("ending at " + endAt);
 	fizzBuzz();
 }
 
@@ -50,10 +50,23 @@ function isMultipleBuzz(number) {
    }
 }
 
+// fizzbuzz loop
 function fizzBuzz() {
 	var startAt = document.getElementById("startNumber").value;
 	var endAt = document.getElementById("endNumber").value;
 	var upDown = document.getElementById("countDir").value;
+
+	if (upDown === "countUp") {
+		if (startAt > endAt) {
+			startAt = endAt;
+			endAt = document.getElementById("startNumber").value;
+		}
+	} else {
+		if (startAt < endAt) {
+			startAt = endAt;
+			endAt = document.getElementById("startNumber").value;
+		}
+	}
 
 	//alert("fizzBuzz loop");
 
@@ -80,7 +93,7 @@ function fizzBuzz() {
 	} else {
 		//alert("else count-down loop");
 		var output = "";
-		for(i = endAt; i >= startAt; i--) {
+		for(i = startAt; i >= endAt; i--) {
 			if (isMultipleFizz(i) && isMultipleBuzz(i)) {
 	       console.log('fizzbuzz');
 			output += "fizzbuzz";
