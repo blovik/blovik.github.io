@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Raleway-Thin;
+    src: url(Raleway-Thin.ttf);
+    font-family: Raleway-ExtraBold;
+    src: url(Raleway-ExtraBold.ttf);
+}
+
+h1 {
+	color: #C23303;
+	text-shadow: 1px 1px 5px black;
+	text-align: center;
+	font-family: Raleway-ExtraBold;
+	font-size: 3em;
+}
+.setup {
+	font-family: Raleway-Thin, Arial, san-serif;
+	font-size: 1em;
+	text-align: center;
+	background-color: #C23303;
+	color: #fff;
+	height: 50px;
+	padding-top: 1px;
+	border-radius: 30px;
+	box-shadow: 1px 1px 5px black;
+}
+
+#result {
+	text-align: center;
+}
