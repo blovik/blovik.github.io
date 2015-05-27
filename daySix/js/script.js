@@ -23,10 +23,13 @@ function fizzBuzz() {
 	var startAt = document.getElementById("startNumber").value;
 	var endAt = document.getElementById("endNumber").value;
 	var upDown = document.getElementById("countDir").value;
+
+	// check if start and stop are the same
 	if (startAt === endAt) {
 		alert("You can't count from " + startAt + " to " + endAt);
 	}
 
+	// check/reset acending or decending start/end
 	if (upDown === "countUp") {
 		if (startAt > endAt) {
 			startAt = endAt;
@@ -39,8 +42,7 @@ function fizzBuzz() {
 		}
 	}
 
-	//alert("fizzBuzz loop");
-
+	// build output string
 	if(upDown === "countUp") {
 		var output = "";
 		for(i = startAt; i <= endAt; i++) {
