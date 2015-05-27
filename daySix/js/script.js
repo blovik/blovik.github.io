@@ -59,7 +59,7 @@ function fizzBuzz() {
 	       console.log(i);
 			output += i;
 	       }
-			output += "<p>";
+			output += "<br>";
 		}
 	} else {
 		var output = "";
@@ -77,7 +77,7 @@ function fizzBuzz() {
 	       console.log(i);
 			output += i;
 	       }
-			output += "<p>";
+			output += "<br>";
 		}
 	}
 
