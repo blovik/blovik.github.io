@@ -1,21 +1,22 @@
-// check in number is fizz
+// check if number is fizz
 function isMultipleFizz(number) {
 	var fizzAt = document.getElementById("fizzNumber").value;
 	if (number % fizzAt !== 0 || number < fizzAt || isNaN(number) === true) {
-       return false;
+		return false;
 	} else {
-       return true;
+		return true;
 	}
 }
 
 // check if number is buzz
 function isMultipleBuzz(number) {
 	var buzzAt = document.getElementById("buzzNumber").value;
-    if (number % buzzAt !== 0 || number < buzzAt || isNaN(number) === true) {
-       return false;
-   } else {
-       return true;
-   }
+
+	if (number % buzzAt !== 0 || number < buzzAt || isNaN(number) === true) {
+		return false;
+	} else {
+		return true;
+	}
 }
 
 // fizzbuzz loop
@@ -47,40 +48,40 @@ function fizzBuzz() {
 		var output = "";
 		for(i = startAt; i <= endAt; i++) {
 			if (isMultipleFizz(i) && isMultipleBuzz(i)) {
-	       console.log('fizzbuzz');
-			output += "fizzbuzz";
-	       } else if (isMultipleFizz(i)) {
-	       console.log('fizz');
-			output += "fizz";
-	       } else if (isMultipleBuzz(i)) {
-	       console.log('buzz');
-			output += "buzz";
-	       } else {
-	       console.log(i);
-			output += i;
-	       }
+				console.log('fizzbuzz');
+				output += "fizzbuzz";
+			} else if (isMultipleFizz(i)) {
+				console.log('fizz');
+				output += "fizz";
+			} else if (isMultipleBuzz(i)) {
+				console.log('buzz');
+				output += "buzz";
+			} else {
+				console.log(i);
+				output += i;
+			}
 			output += "<br>";
 		}
 	} else {
 		var output = "";
 		for(i = startAt; i >= endAt; i--) {
 			if (isMultipleFizz(i) && isMultipleBuzz(i)) {
-	       console.log('fizzbuzz');
-			output += "fizzbuzz";
-	       } else if (isMultipleFizz(i)) {
-	       console.log('fizz');
-			output += "fizz";
-	       } else if (isMultipleBuzz(i)) {
-	       console.log('buzz');
-			output += "buzz";
-	       } else {
-	       console.log(i);
-			output += i;
-	       }
+				console.log('fizzbuzz');
+				output += "fizzbuzz";
+			} else if (isMultipleFizz(i)) {
+				console.log('fizz');
+				output += "fizz";
+			} else if (isMultipleBuzz(i)) {
+				console.log('buzz');
+				output += "buzz";
+			} else {
+				console.log(i);
+				output += i;
+			}
 			output += "<br>";
 		}
 	}
-
+	// output
 	document.getElementById("result").innerHTML = output;
 }
 
