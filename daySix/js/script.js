@@ -36,7 +36,7 @@ function fizzBuzz() {
 			startAt = endAt;
 			endAt = document.getElementById("startNumber").value;
 		}
-	} else {
+	} else { //count down - startAt high & endAt low
 		if (startAt < endAt) {
 			startAt = endAt;
 			endAt = document.getElementById("startNumber").value;
@@ -44,7 +44,7 @@ function fizzBuzz() {
 	}
 
 	// build output string
-	if(upDown === "countUp") {
+	if(upDown === "countUp") { // count up from low
 		var output = "";
 		for(i = startAt; i <= endAt; i++) {
 			if (isMultipleFizz(i) && isMultipleBuzz(i)) {
@@ -62,7 +62,7 @@ function fizzBuzz() {
 			}
 			output += "<br>";
 		}
-	} else {
+	} else { // count down from high
 		var output = "";
 		for(i = startAt; i >= endAt; i--) {
 			if (isMultipleFizz(i) && isMultipleBuzz(i)) {
