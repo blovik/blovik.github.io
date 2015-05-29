@@ -18,13 +18,17 @@
 				<button onclick="inputTop('1')">1</button>
 				<button onclick="inputTop('2')">2</button>
 				<button onclick="inputTop('3')">3</button>
+				<br>
 				<button onclick="inputTop('4')">4</button>
 				<button onclick="inputTop('5')">5</button>
 				<button onclick="inputTop('6')">6</button>
+				<br>
 				<button onclick="inputTop('7')">7</button>
 				<button onclick="inputTop('8')">8</button>
 				<button onclick="inputTop('9')">9</button>
+				<br>
 				<button onclick="inputTop('0')")>0</button>
+				<button onclick="clear1()"> Clear </button>
 			</div>
 
 			<div class="input2">
@@ -32,40 +36,47 @@
 				<button onclick="inputMiddle('1')">1</button>
 				<button onclick="inputMiddle('2')">2</button>
 				<button onclick="inputMiddle('3')">3</button>
+				<br>
 				<button onclick="inputMiddle('4')">4</button>
 				<button onclick="inputMiddle('5')">5</button>
 				<button onclick="inputMiddle('6')">6</button>
+				<br>
 				<button onclick="inputMiddle('7')">7</button>
 				<button onclick="inputMiddle('8')">8</button>
 				<button onclick="inputMiddle('9')">9</button>
+				<br>
 				<button onclick="inputMiddle('0')")>0</button>
+				<button onclick="clear2()"> Clear </button>
 			</div>
 
 			<div class="selectOperator">
 				<button onclick="sign('+')"> + </button>
 				<button onclick="sign('-')"> - </button>
 				<button onclick="sign('*')"> x </button>
-				<button onclick="sign('/')"> &divide; </button><button onclick="maths('+')"> = </button>
+				<button onclick="sign('/')"> &divide; </button>
+				<button onclick="maths()"> = </button>
 			</div>
 			
 		</aside>
 
-		<div class="inputStuff">
-			<h5 id="topNumber"></h5>
-		</div>
-
-		<div class="inputStuff line">
-			<div id="operator">
-				<h5 id="sign"></h5>
+		<div class="result">
+			<div class="inputStuff">
+				<h5 id="topNumber"> </h5>
 			</div>
 
-			<div id="middleRight">
-				<h5 id="middleNumber"></h5>
-			</div>
-		</div>
+			<div class="inputStuff line">
+				<div id="operator">
+					<h5 id="sign"></h5>
+				</div>
 
-		<div class="inputStuff">
-			<h5 id="answer"></h5>
+				<div id="middleRight">
+					<h5 id="middleNumber"> </h5>
+				</div>
+			</div>
+
+			<div class="inputStuff">
+				<h5 id="answer"></h5>
+			</div>
 		</div>
 	</div> <!-- end container -->	
 

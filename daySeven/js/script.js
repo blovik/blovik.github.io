@@ -23,8 +23,15 @@ function maths() {
 	var num2 = document.getElementById("middleNumber").innerHTML;
 	var s = document.getElementById("sign").innerHTML;
 	var answer = num1.toString() + s + num2.toString();
-	alert(answer);
 	document.getElementById("answer").innerHTML = eval(answer);
+}
+
+function clear1() {
+	document.getElementById("topNumber").innerHTML = "";
+}
+
+function clear2() {
+	document.getElementById("middleNumber").innerHTML = "";
 }
 
 // calculator function=========================
