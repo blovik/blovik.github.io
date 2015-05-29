@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 1: Day 7</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>JavaScript 1: Day 7</h1>
+		<h1>+ - x &divide;</h1>
+	</div>
+
+	<div class="container">
+		<aside>
+			<div class="input1">
+				<h6>Input Top Number</h6>
+				<button onclick="inputTop('1')">1</button>
+				<button onclick="inputTop('2')">2</button>
+				<button onclick="inputTop('3')">3</button>
+				<button onclick="inputTop('4')">4</button>
+				<button onclick="inputTop('5')">5</button>
+				<button onclick="inputTop('6')">6</button>
+				<button onclick="inputTop('7')">7</button>
+				<button onclick="inputTop('8')">8</button>
+				<button onclick="inputTop('9')">9</button>
+				<button onclick="inputTop('0')")>0</button>
+			</div>
+
+			<div class="input2">
+				<h6>Input Bottom Number</h6>
+				<button onclick="inputMiddle('1')">1</button>
+				<button onclick="inputMiddle('2')">2</button>
+				<button onclick="inputMiddle('3')">3</button>
+				<button onclick="inputMiddle('4')">4</button>
+				<button onclick="inputMiddle('5')">5</button>
+				<button onclick="inputMiddle('6')">6</button>
+				<button onclick="inputMiddle('7')">7</button>
+				<button onclick="inputMiddle('8')">8</button>
+				<button onclick="inputMiddle('9')">9</button>
+				<button onclick="inputMiddle('0')")>0</button>
+			</div>
+
+			<div class="selectOperator">
+				<button onclick="sign('+')"> + </button>
+				<button onclick="sign('-')"> - </button>
+				<button onclick="sign('*')"> x </button>
+				<button onclick="sign('/')"> &divide; </button><button onclick="maths('+')"> = </button>
+			</div>
+			
+		</aside>
+
+		<div class="inputStuff">
+			<h5 id="topNumber"></h5>
+		</div>
+
+		<div class="inputStuff line">
+			<div id="operator">
+				<h5 id="sign"></h5>
+			</div>
+
+			<div id="middleRight">
+				<h5 id="middleNumber"></h5>
+			</div>
+		</div>
+
+		<div class="inputStuff">
+			<h5 id="answer"></h5>
+		</div>
+	</div> <!-- end container -->	
+
+
+
+
+
+
+
+
+<FORM id="Calc">
+<TABLE BORDER=4>
+<TR>
+<TD>
+<INPUT TYPE="text"   id="Input" Size="16">
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<INPUT TYPE="button" VALUE="  1  " OnClick="Calc.Input.value += '1'">
+<INPUT TYPE="button" VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+<INPUT TYPE="button" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+<INPUT TYPE="button" VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+<br>
+<INPUT TYPE="button" VALUE="  4  " OnClick="Calc.Input.value += '4'">
+<INPUT TYPE="button" VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+<INPUT TYPE="button" VALUE="  6  " OnClick="Calc.Input.value += '6'">
+<INPUT TYPE="button" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+<br>
+<INPUT TYPE="button" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+<INPUT TYPE="button" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+<INPUT TYPE="button" VALUE="  9  " OnClick="Calc.Input.value += '9'">
+<INPUT TYPE="button" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+<br>
+<INPUT TYPE="button" VALUE="  c  " OnClick="Calc.Input.value = ''">
+<INPUT TYPE="button" VALUE="  0  " OnClick="Calc.Input.value += '0'">
+<INPUT TYPE="button" VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+<INPUT TYPE="button" VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+<br>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<!-- <p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p> -->
+
+
+
+	<script src="js/script.js"></script>
+</body>
+</html>
