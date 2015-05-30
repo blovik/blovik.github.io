@@ -6,6 +6,21 @@ h1 {
 	text-align: center;
 }
 
+h3 {
+	font-size: .05em;
+	color: grey;
+	text-align: right;
+}
+
+h5 {
+	margin: 5px;
+	padding: 5px;
+}
+
+h6 {
+	color: #fff;
+}
+
 .container {
 	margin: 0px 20px;
 }
@@ -17,7 +32,17 @@ aside {
 	background-color: gray;
 	padding-left: 20px;
 	border-radius: 0px 100px 100px 0px;
-	box-shadow: 2px 2px 5px #000;
+	box-shadow: 2px 2px 0px #000;
+}
+
+button {
+	height: 20px;
+	width: 50px;
+	font-size: 1em;
+}
+
+.clear {
+	width: 105px;
 }
 
 .result {
@@ -28,16 +53,7 @@ aside {
 	height: 500px;
 	font-size: 10em;
 	border-radius: 100px 0px 0px 100px;
-	box-shadow: 2px 2px 5px #000;
-}
-
-h5 {
-	margin: 5px;
-	padding: 5px;
-}
-
-h6 {
-	color: #fff;
+	box-shadow: 2px 2px 0px #000;
 }
 
 #answer {
