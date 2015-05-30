@@ -2,6 +2,10 @@
 	font-family: arial, helvetica, san-serif;
 }
 
+.container {
+	margin: 0px 20px;
+}
+
 aside {
 	float: right;
 	width: 20%;
@@ -24,25 +28,30 @@ aside {
 	height: 100px;
 	background-color: pink;
 	margin: 0px;
+	padding-right: 20px;
 }
 
 .line {
 	border-bottom: 4px solid black;
 	background-color: yellow;
+	margin: 0px;
 }
 
 #operator {
 	position: absolute;
 	float: left;
 	width: 100px;
+	margin: 0px;
 }
 
 .middleRight {
 	position: relative;
 	float: right;
 	width: 200px;
+	margin: 0px;
 }
 
 .Calc {
 	clear: both;
+	width: 100%;
 }

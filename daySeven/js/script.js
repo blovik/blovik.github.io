@@ -15,14 +15,18 @@ function inputMiddle(middleNumber) { // create second number
 }
 
 function sign(s) { // set the operator
-	document.getElementById("sign").innerHTML = s;
+	//document.getElementById("sign").innerHTML = s;
+
+	var oldNumber = document.getElementById("middleNumber").innerHTML;
+	newNumber =  s + " " + oldNumber;
+	document.getElementById("middleNumber").innerHTML = newNumber;
 }
 
 function maths() {
 	var num1 = document.getElementById("topNumber").innerHTML;
 	var num2 = document.getElementById("middleNumber").innerHTML;
-	var s = document.getElementById("sign").innerHTML;
-	var answer = num1.toString() + s + num2.toString();
+	//var s = document.getElementById("sign").innerHTML;
+	var answer = num1.toString() + num2.toString();
 	document.getElementById("answer").innerHTML = eval(answer);
 }
 
