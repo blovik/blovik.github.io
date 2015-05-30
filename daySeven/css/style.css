@@ -51,6 +51,9 @@ button {
 
 #equal {
 	width: 160px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 5px;
 }
 
 .result {
