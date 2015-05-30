@@ -17,6 +17,7 @@ aside {
 	background-color: gray;
 	padding-left: 20px;
 	border-radius: 0px 100px 100px 0px;
+	box-shadow: 2px 2px 5px #000;
 }
 
 .result {
@@ -27,6 +28,7 @@ aside {
 	height: 500px;
 	font-size: 10em;
 	border-radius: 100px 0px 0px 100px;
+	box-shadow: 2px 2px 5px #000;
 }
 
 h5 {
@@ -35,7 +37,6 @@ h5 {
 }
 
 h6 {
-
 	color: #fff;
 }
 
