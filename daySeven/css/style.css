@@ -19,11 +19,17 @@ aside {
 	width: 80%;
 	background-color: lightgrey;
 	height: 500px;
-	font-size: 5em;
+	font-size: 10em;
 }
 
 h5 {
-	margin: 0px;
+	margin: 5px;
+	padding: 5px;
+}
+
+#answer {
+	margin-top: 0px;
+	padding-top: 50px;
 }
 
 .inputStuff{
