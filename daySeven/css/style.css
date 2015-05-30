@@ -45,6 +45,14 @@ button {
 	width: 105px;
 }
 
+.opButton {
+	width: 38px;
+}
+
+#equal {
+	width: 160px;
+}
+
 .result {
 	position: relative;
 	float: left;
