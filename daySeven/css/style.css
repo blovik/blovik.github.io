@@ -62,14 +62,14 @@ button {
 	width: 80%;
 	background-color: lightgrey;
 	height: 500px;
-	font-size: 10em;
+	font-size: 12em;
 	border-radius: 100px 0px 0px 100px;
 	box-shadow: 2px 2px 0px #000;
 }
 
 #answer {
 	margin-top: 0px;
-	padding-top: 50px;
+	padding-top: 80px;
 }
 
 .inputStuff{
