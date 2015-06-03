@@ -1,5 +1,3 @@
-
-//alert('hey');
 // number input================================
 
 function inputTop(topNumber) { //create top number
@@ -25,8 +23,8 @@ function sign(s) { // set the operator
 function maths() {
 	var num1 = document.getElementById("topNumber").innerHTML;
 	var num2 = document.getElementById("middleNumber").innerHTML;
-	//var s = document.getElementById("sign").innerHTML;
 	var answer = num1.toString() + num2.toString();
+
 	document.getElementById("answer").innerHTML = eval(answer);
 }
 
@@ -37,6 +35,7 @@ function clear1() {
 function clear2() {
 	document.getElementById("middleNumber").innerHTML = "";
 }
+
 
 // calculator function=========================
 
