@@ -1,41 +1,76 @@
+(function(){
 
-(function() {
-
-  var todo = document.querySelector('#todolist'),
+  var todo = document.querySelector('#todoList'),
       form = document.querySelector('form'),
-      field = document.querySelector('#newitem');
-    
+      item = document.querySelector('#newItem');
+  //todo=UL(list), form=input area, item=text input
+
+  //build new list item, reset submit, save list 
   form.addEventListener('submit', function(ev) {
-    todo.innerHTML += '<li>' + field.value + '</li>';
-    field.value = '';
-    field.focus();
+    todo.innerHTML += '<li>' + item.value + '</li>';
+    item.value = '';
     saveListLocal();
     ev.preventDefault();
   }, false);
 
+  //ev=click, 1=checkmark, 2=delete, resave list
   todo.addEventListener('click', function(ev) {
-    var t = ev.target;
-    if (t.tagName === 'LI') {
-      if (t.classList.contains('done')) {
-        t.parentNode.removeChild(t);
+    var state = ev.target;
+    if (state.tagName === 'LI') {
+      if (state.classList.contains('done')) {
+        state.parentNode.removeChild(state);
       } else {  
-        t.classList.add('done');
+        state.classList.add('done');
       }
       saveListLocal();
     };
     ev.preventDefault();
   }, false);
 
-  document.addEventListener('DOMContentLoaded', listFromLocalStorage, false);
+  // after DOM loads, check for stored list
+  document.addEventListener('DOMContentLoaded', getListLocal, false);
   
+  // stores data forever locally
   function saveListLocal() {
     localStorage.todolist = todo.innerHTML;
   };
 
-  function listFromLocalStorage() {
+  // if something's saved locally, get it
+  function getListLocal() {
     if (localStorage.todolist) {
       todo.innerHTML = localStorage.todolist;
     }
   };
 
 })();
+
+
+// ============ calendar =============
+
+// find today's date
+function calendar () {
+  var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var d = new Date();
+
+  setText('calendar-day', day[d.getDay()]);
+  setText('calendar-date', d.getDate());
+  setText('calendar-month-year', month[d.getMonth()] + ' ' + (1900 + d.getYear()));
+};
+
+// set value of <p> tags
+function setText(id, val){
+  document.getElementById(id).innerHTML = val;
+};
+
+// call calendar
+window.onload = calendar;
+
+
+
+
+
+
+
+
+

@@ -8,23 +8,39 @@ footer, section, header {
 body {
   padding: 2em;
   font-size: 15px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
+}
+h1 {
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 2.5em;
 }
 form {
   width: 280px;
-  background: #333;
+  background: cornflowerblue;
   color: #fff;
   border-radius: 5px;
   padding: 5px 10px;
 }
-#newitem {
+#title {
+  position: fixed;
+  display: inline-block;
+  background-color: #fff;
+  width: 130px;
+  height: 180px;
+  margin-top: 0;
+  color: #000;
+  border-radius: 5%;
+  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);  
+}
+#newItem {
   width: 160px;
 }
-#todolist {
+#todoList {
   width: 280px;
   margin: 10px 10px;
 }
-#todolist li {
+#todoList li {
   border-radius: 2px;
   list-style: none;
   background: #eee;
@@ -32,20 +48,64 @@ form {
   margin-bottom: 5px;
   position: relative;
 }
-#todolist li:nth-child(2n) {
+#todoList li:nth-child(2n) {
   background: #ccc;
 }
-#todolist li:hover:after,
-#todolist li.done:after {
+#todoList li:hover:after,
+#todoList li.done:after {
   content: '✔';
   color: #060;
   position: absolute;
   right: 5px;    
 }
-#todolist li.done:hover:after {
+#todoList li.done:hover:after {
   content: 'x';
   font-weight: bold;
   color: #c00;
   position: absolute;
   right: 5px;    
 }
+
+
+/*============ calendar ============*/
+
+#calendar {
+  display: inline-block;
+  width: 130px;
+  height: 180px;
+  background-color: cornflowerblue;
+  color: #fff;
+  border-radius: 5%;
+  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+}
+
+#calendar>p {
+  padding: 8px 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+#calendar-day {
+  font-size: 16px;
+}
+
+#calendar-date {
+  font-size: 64px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+#calendar-month-year {
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
