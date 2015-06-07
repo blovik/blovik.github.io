@@ -10,11 +10,13 @@ body {
   font-size: 15px;
   font-family: Verdana, Arial, sans-serif;
   background-color: #DAE0ED;
+  text-shadow: 0 1px #000;
 }
 h1 {
   color: #6495ED;
   text-align: center;
   font-size: 2.5em;
+  font-weight: bold;
 }
 form {
   width: 300px;
@@ -22,7 +24,7 @@ form {
   color: #fff;
   border-radius: 15px;
   padding: 5px 10px;
-  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+  box-shadow: 0 4px 4px 0 #A2A2A2;
 }
 input[type="submit"] {
   color: #6495ED;
@@ -39,7 +41,7 @@ input[type="text"] {
   margin-top: 0;
   color: #000;
   border-radius: 0 15% 15% 0;
-  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);  
+  box-shadow: 0 4px 4px 0 #A2A2A2;  
 }
 #newItem {
   width: 170px;
@@ -49,16 +51,22 @@ input[type="text"] {
   margin: 10px 10px;
 }
 #todoList li {
-  border-radius: 5px;
+  border-radius: 15px;
   list-style: none;
-  background: #eee;
+  /*background: #eee;*/
+  background-color: #fff;
+  color: #6495ED;
+  text-shadow: .5px 0 black;
   padding: 5px 10px;
   margin-bottom: 5px;
   position: relative;
-  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+  box-shadow: 0 4px 4px 0 #A2A2A2;
 }
 #todoList li:nth-child(2n) {
-  background: #ccc;
+  /*background: #ccc;*/
+  background-color: #6495ED;
+  color: #fff;
+  text-shadow: .5px 0 black;
 }
 #todoList li:hover:after,
 #todoList li.done:after {
@@ -85,7 +93,7 @@ input[type="text"] {
   background-color: #6495ED;
   color: #fff;
   border-radius: 15% 0 0 15%;
-  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+  box-shadow: 0 4px 4px 0 #A2A2A2;
 }
 
 #calendar>p {
@@ -93,20 +101,24 @@ input[type="text"] {
   margin: 0;
   color: #fff;
   text-align: center;
+  text-shadow: 0 1px #000;
 }
 
 #calendar-day {
   font-size: 16px;
+  text-shadow: 0 1px #000;
 }
 
 #calendar-date {
   font-size: 64px;
   padding-top: 10px;
   padding-bottom: 0px;
+  text-shadow: 0 1px #000;
 }
 
 #calendar-month-year {
   font-size: 14px;
+  text-shadow: 0 1px #000;
 }
 
 
