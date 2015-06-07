@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
 footer, section, header {
   display: block;
 }
+
 body {
   padding: 2em;
   font-size: 15px;
@@ -12,12 +14,14 @@ body {
   background-color: #DAE0ED;
   text-shadow: 0 1px #000;
 }
+
 h1 {
   color: #6495ED;
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
 }
+
 form {
   width: 300px;
   background: #6495ED;
@@ -26,63 +30,68 @@ form {
   padding: 5px 10px;
   box-shadow: 0 4px 4px 0 #A2A2A2;
 }
+
 input[type="submit"] {
   color: #6495ED;
 }
+
 input[type="text"] {
   color: #000;
 }
+
 #title {
   position: fixed;
   display: inline-block;
   background-color: #fff;
   width: 160px;
   height: 180px;
-  margin-top: 0;
   color: #000;
   border-radius: 0 15% 15% 0;
   box-shadow: 0 4px 4px 0 #A2A2A2;  
 }
+
 #newItem {
   width: 170px;
 }
+
 #todoList {
   width: 300px;
   margin: 10px 10px;
 }
+
 #todoList li {
   border-radius: 15px;
   list-style: none;
-  /*background: #eee;*/
   background-color: #fff;
   color: #6495ED;
-  text-shadow: .5px 0 black;
+  text-shadow: .5px 0 #000;
   padding: 5px 10px;
   margin-bottom: 5px;
   position: relative;
   box-shadow: 0 4px 4px 0 #A2A2A2;
 }
+
 #todoList li:nth-child(2n) {
-  /*background: #ccc;*/
   background-color: #6495ED;
   color: #fff;
-  text-shadow: .5px 0 black;
+  text-shadow: .5px 0 #000;
 }
+
 #todoList li:hover:after,
-#todoList li.done:after {
+#todoList li.completed:after {
   content: '✔';
   color: #060;
   position: absolute;
   right: 5px;    
 }
-#todoList li.done:hover:after {
-  content: 'x';
+
+#todoList li.completed:hover:after {
+  content: '✘';
   font-weight: bold;
   color: #c00;
   position: absolute;
   right: 5px;    
 }
-
 
 /*============ calendar ============*/
 
@@ -98,7 +107,6 @@ input[type="text"] {
 
 #calendar>p {
   padding: 8px 0;
-  margin: 0;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px #000;
@@ -111,6 +119,7 @@ input[type="text"] {
 
 #calendar-date {
   font-size: 64px;
+  font-weight: bold;
   padding-top: 10px;
   padding-bottom: 0px;
   text-shadow: 0 1px #000;

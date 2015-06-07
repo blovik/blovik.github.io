@@ -1,8 +1,8 @@
 (function(){
 
-  var todo = document.querySelector('#todoList'),
-      form = document.querySelector('form'),
-      item = document.querySelector('#newItem');
+  var todo = document.querySelector('#todoList');
+  var form = document.querySelector('form');
+  var item = document.querySelector('#newItem');
   //todo=UL(list), form=input area, item=text input
 
   //build new list item, reset submit, save list 
@@ -11,24 +11,40 @@
     item.value = '';
     saveListLocal();
     ev.preventDefault();
-  }, false);
+  });
 
   //ev=click, 1=checkmark, 2=delete, resave list
   todo.addEventListener('click', function(ev) {
     var state = ev.target;
     if (state.tagName === 'LI') {
-      if (state.classList.contains('done')) {
+      if (state.classList.contains('completed')) {
         state.parentNode.removeChild(state);
       } else {  
-        state.classList.add('done');
+        state.classList.add('completed');
       }
       saveListLocal();
     };
     ev.preventDefault();
-  }, false);
+  });
+
+
+  // todo.addEventListener('click', function(ev) {
+  //   var state = ev.target;
+  //   if (state.tagName === 'LI') {
+  //     if (state.classList.contains('done')) {
+  //       state.parentNode.removeChild(state);
+  //     } else {  
+  //       state.classList.add('done');
+  //     }
+  //     saveListLocal();
+  //   };
+  //   ev.preventDefault();
+  // }, false);
+
+
 
   // after DOM loads, check for stored list
-  document.addEventListener('DOMContentLoaded', getListLocal, false);
+  document.addEventListener('DOMContentLoaded', getListLocal);
   
   // stores data forever locally
   function saveListLocal() {
