@@ -1,5 +1,4 @@
 (function(){
-
   var todo = document.querySelector('#todoList');
   var form = document.querySelector('form');
   var item = document.querySelector('#newItem');
@@ -14,7 +13,7 @@
   });
 
   //ev=click, 1=checkmark, 2=delete, resave list
-  todo.addEventListener('click', function(ev) {
+  todoList.addEventListener('click', function(ev) {
     var state = ev.target;
     if (state.tagName === 'LI') {
       if (state.classList.contains('completed')) {
@@ -26,22 +25,6 @@
     };
     ev.preventDefault();
   });
-
-
-  // todo.addEventListener('click', function(ev) {
-  //   var state = ev.target;
-  //   if (state.tagName === 'LI') {
-  //     if (state.classList.contains('done')) {
-  //       state.parentNode.removeChild(state);
-  //     } else {  
-  //       state.classList.add('done');
-  //     }
-  //     saveListLocal();
-  //   };
-  //   ev.preventDefault();
-  // }, false);
-
-
 
   // after DOM loads, check for stored list
   document.addEventListener('DOMContentLoaded', getListLocal);
@@ -59,7 +42,6 @@
   };
 
 })();
-
 
 // ============ calendar =============
 
@@ -81,9 +63,6 @@ function setText(id, val){
 
 // call calendar
 window.onload = calendar;
-
-
-
 
 
 
