@@ -12,15 +12,25 @@ makeMovieList(movies);
 
 function makeMovieList(movies) {
 	var newMovie = '';
-	for (var i in movies) {
+	for (i in movies) {
 		var addMovie = "<li>" + movies[i] + "</li>";
 		newMovie = newMovie + addMovie;
 	}
 	document.getElementById('movieList').innerHTML = newMovie;
 }
 
+document.getElementById("moreMovies").addEventListener("click", addMovie);
+
+function addMovie() {
+    var listItem = document.createElement('li');
+    var newMovie = prompt('Add a movie:');
+    listItem.textContent = newMovie;
+    var movieList = document.querySelector('#moreMovies');
+    addMovies.appendChild(listItem);
+}
+
 // Hunter's solution:===============================
-// for (var x in movies) {
+// for (x in movies) {
 //     var listItem = document.createElement('li');
 //     listItem.textContent = movies[x];
 //     var movieList = document.querySelector('#movieList');
