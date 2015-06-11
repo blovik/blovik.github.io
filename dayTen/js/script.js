@@ -1,10 +1,11 @@
+// create movie list from javascript============
 var movies = [];
 
 movies.push(
 	'The Princess Bride', 
 	'Ground Hog Day', 
 	'Second Hand Lions', 
-	'My Fair Lady', 
+	'Bourne Identity', 
 	'Sleeping Beauty'
 );
 
@@ -19,13 +20,15 @@ function makeMovieList(movies) {
 	document.getElementById('movieList').innerHTML = newMovie;
 }
 
+// add new movies from button=====================
 document.getElementById("moreMovies").addEventListener("click", addMovie);
 
 function addMovie() {
     var listItem = document.createElement('li');
     var newMovie = prompt('Add a movie:');
-    listItem.textContent = newMovie;
+    	listItem.textContent = newMovie;
     var movieList = document.querySelector('#moreMovies');
+    
     addMovies.appendChild(listItem);
 }
 

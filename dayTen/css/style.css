@@ -1,3 +1,27 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #F2F2F2;
+	text-shadow: 0 1px #000;
+}
+
 h1 {
-	color: blue;
+	color: #FF1F2A;
+	text-shadow: 0 1px #000;
+}
+
+h2 {
+	color: #FF1F2A;
+	text-shadow: 0 1px #000;
+}
+
+li {
+	font-size: 1.2em;
+}
+
+#movieList {
+	color: #00E499;
+}
+
+#addMovies {
+	color: #F0BE00;
 }
