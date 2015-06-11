@@ -9,13 +9,13 @@ movies.push('Sleeping Beauty');
 makeMovieList(movies);
 
 function makeMovieList(movies) {
-	for (i = 0; i < 5; i++) {
+	var newMovie = '';
+	for (var i in movies) {
 		var addMovie = "<li>" + movies[i] + "</li>";
-		alert(addMovie);// Just to see what's happening - looks right
-		var newMovie = newMovie + addMovie;
-	};
+		newMovie = newMovie + addMovie;
+	}
 	document.getElementById('movieList').innerHTML = newMovie;
-};
+}
 
 
 
