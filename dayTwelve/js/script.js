@@ -52,13 +52,13 @@ function calendar () {
   var d = new Date();
   // d = something like: Thu Jun 11 2015 13:11:32 GMT-0700 (PDT)
 
-  setText('calendar-day', day[d.getDay()]); //1-7
-  setText('calendar-date', d.getDate()); //1-31
-  setText('calendar-month-year', month[d.getMonth()] + ' ' + (1900 + d.getYear())); //M=1-12, Y=115
+  newCalendar('calendar-day', day[d.getDay()]); //1-7
+  newCalendar('calendar-date', d.getDate()); //1-31
+  newCalendar('calendar-month-year', month[d.getMonth()] + ' ' + (1900 + d.getYear())); //M=1-12, Y=115
 };
 
 // set values of calendar <p>'s'
-function setText(id, val){
+function newCalendar(id, val){
   document.getElementById(id).innerHTML = val;
 };
 
