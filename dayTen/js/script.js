@@ -15,7 +15,7 @@ function makeMovieList(movies) {
 	var newMovie = '';
 	for (i in movies) {
 		var addMovie = "<li>" + movies[i] + "</li>";
-		newMovie = newMovie + addMovie;
+		newMovie += addMovie;
 	}
 	document.getElementById('movieList').innerHTML = newMovie;
 }
@@ -28,7 +28,7 @@ function addMovie() {
     var newMovie = prompt('Add a movie:');
     	listItem.textContent = newMovie;
     var movieList = document.querySelector('#moreMovies');
-    
+
     addMovies.appendChild(listItem);
 }
 
