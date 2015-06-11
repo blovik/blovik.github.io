@@ -50,13 +50,14 @@ function calendar () {
   var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   var d = new Date();
+  // d = something like: Thu Jun 11 2015 13:11:32 GMT-0700 (PDT)
 
-  setText('calendar-day', day[d.getDay()]);
-  setText('calendar-date', d.getDate());
-  setText('calendar-month-year', month[d.getMonth()] + ' ' + (1900 + d.getYear()));
+  setText('calendar-day', day[d.getDay()]); //1-7
+  setText('calendar-date', d.getDate()); //1-31
+  setText('calendar-month-year', month[d.getMonth()] + ' ' + (1900 + d.getYear())); //M=1-12, Y=115
 };
 
-// set value of <p> tags
+// set values of calendar <p>'s'
 function setText(id, val){
   document.getElementById(id).innerHTML = val;
 };
