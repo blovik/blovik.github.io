@@ -1,10 +1,12 @@
 var movies = [];
 
-movies.push('The Princess Bride');
-movies.push('Ground Hog Day');
-movies.push('Second Hand Lions');
-movies.push('My Fair Lady');
-movies.push('Sleeping Beauty');
+movies.push(
+	'The Princess Bride', 
+	'Ground Hog Day', 
+	'Second Hand Lions', 
+	'My Fair Lady', 
+	'Sleeping Beauty'
+);
 
 makeMovieList(movies);
 
@@ -17,8 +19,7 @@ function makeMovieList(movies) {
 	document.getElementById('movieList').innerHTML = newMovie;
 }
 
-
-
+// Hunter's solution:===============================
 // for (var x in movies) {
 //     var listItem = document.createElement('li');
 //     listItem.textContent = movies[x];
