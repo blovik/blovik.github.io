@@ -32,9 +32,17 @@ function addMovie() {
 }
 
 // Hunter's solution:===============================
-// for (x in movies) {
+
+// var movieList = document.querySelector('#movieList');
+
+// for (movie in movies) {
 //     var listItem = document.createElement('li');
-//     listItem.textContent = movies[x];
-//     var movieList = document.querySelector('#movieList');
+//     listItem.textContent = movies[movie];
 //     movieList.appendChild(listItem);
 // }
+
+
+
+
+
+
