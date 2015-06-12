@@ -15,15 +15,17 @@ body {
 h1 {
 	color: #FF1F2A;
 	text-shadow: 0 1px #000;
+	font-size: 2.5em;
 }
 
 h2 {
 	color: #FF1F2A;
 	text-shadow: 0 1px #000;
+	font-size: 2.2em
 }
 
 li {
-	font-size: 1.2em;
+	font-size: 1.75em;
 }
 
 #movieList {

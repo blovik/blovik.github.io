@@ -27,7 +27,6 @@ function addMovie() {
     var listItem = document.createElement('li');
     var newMovie = prompt('Add a movie:');
     	listItem.textContent = newMovie;
-    var movieList = document.querySelector('#moreMovies');
 
     addMovies.appendChild(listItem);
 }
