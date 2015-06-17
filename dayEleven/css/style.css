@@ -1,0 +1,23 @@
+h1 {
+	color: blue;
+}
+
+.showNumber {
+	display: block;
+}
+
+.showNames {
+	display: none;
+}
+
+.showRelated {
+	display: none;
+}
+
+.showAge {
+	display: none;
+}
+
+.showFinal {
+	display: none;
+}

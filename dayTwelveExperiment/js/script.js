@@ -6,9 +6,22 @@
 
   //build new list item, reset submit, save list 
   form.addEventListener('submit', function(ev) {
-    todo.innerHTML += '<li>' + item.value + '</li>';
+    todo.innerHTML += '<li class="item">' + '<button class="editBtn">edit</button>' + ' ' + item.value + '</li>';
     item.value = '';
     saveListLocal();
+    ev.preventDefault();
+  });
+
+   // edit 
+  todoList.addEventListener('click', function(el) {
+    var state = el.target;
+    var findParent = el.target.closest('li').innerHTML;
+    if (state.tagName === 'BUTTON') {
+      alert("really");
+      alert(findParent);
+
+      saveListLocal();
+    };
     ev.preventDefault();
   });
 
@@ -17,7 +30,13 @@
     var state = ev.target;
     if (state.tagName === 'LI') {
       if (state.classList.contains('completed')) {
+        var goAway = confirm('Delete?');
+        if(goAway){
         state.parentNode.removeChild(state);
+        //localStorage.todolist = "";
+        } else {
+          return;
+        }
       } else {  
         state.classList.add('completed');
       }
@@ -42,6 +61,10 @@
   };
 
 })();
+
+// ============== Edit Button ===============
+
+
 
 // ============ calendar =============
 
