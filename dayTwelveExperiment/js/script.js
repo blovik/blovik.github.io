@@ -16,10 +16,14 @@
   todoList.addEventListener('click', function(el) {
     var state = el.target;
     var findParent = el.target.closest('li').innerHTML;
+    //findParent = findParent.textContent;
     if (state.tagName === 'BUTTON') {
-      alert("really");
+      alert("Seriously? You typed it wrong and now you want me to fix it. Jeez! Just add it correctly and delete this one. How lazy can you get?");
       alert(findParent);
-
+      var newTodo = prompt('Okay, what did your really want to say?');
+      //state.parentNode.remove(state);
+      todo.innerHTML += '<li class="item">' + 
+    '<button class="editBtn">edit</button>' + ' ' + newTodo + '</li>';
       saveListLocal();
     };
     ev.preventDefault();
@@ -87,6 +91,10 @@ function newCalendar(id, val){
 
 // call calendar
 window.onload = calendar;
+
+// clear local memory
+//localStorage.todolist = '';
+
 
 
 
