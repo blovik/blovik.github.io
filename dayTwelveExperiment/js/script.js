@@ -16,7 +16,8 @@
   todoList.addEventListener('click', function(el) {
     var oldTodo = el.target;
     if (oldTodo.tagName === 'BUTTON') {
-      var newTodo = prompt('Okay, what did your really want to say?');
+      oldTodo.parentNode.lastChild.textContent = '';
+      var newTodo = prompt('Okay, what did you really want to say?');
       newTodo = '<button class="editBtn">edit</button>' + ' ' + newTodo;
       oldTodo.outerHTML = newTodo;
       saveListLocal();
