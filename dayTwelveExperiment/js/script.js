@@ -15,10 +15,7 @@
    // edit =========================================
   todoList.addEventListener('click', function(el) {
     var oldTodo = el.target;
-    var findParent = el.target.closest('li').innerHTML;
     if (oldTodo.tagName === 'BUTTON') {
-      alert("Seriously? You typed it wrong and now you want me to fix it. Jeez! Just add it correctly and delete this one. How lazy can you get?");
-      alert('findParent = ' + findParent + '\noldTodo = ' + oldTodo);
       var newTodo = prompt('Okay, what did your really want to say?');
       newTodo = '<button class="editBtn">edit</button>' + ' ' + newTodo;
       oldTodo.outerHTML = newTodo;
