@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TodoList</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div id="calendar">
+			<p id="calendar-day"></p>
+			<p id="calendar-date"></p>
+			<p id="calendar-month-year"></p>
+		</div>
+
+		<div id="title">
+			<h1>Todo</h1>
+			<h1>List!</h1>
+		</div>
+
+	</header>
+	<section>
+		<ul id="todoList"></ul>
+		<form action="#" method="post">
+			<!-- post appends form-data inside HTTP request -->
+			<div>
+				<label for="newItem">Add Todo</label>
+				<input type="text" name="newitem" id="newItem" placeholder="input new item here" required>
+				<input type="submit" value=" Add " id="add">
+			</div>
+		</form>
+
+		<br>
+		<button id="clear" onclick='clearAll()'>Clear</button>
+	</section>
+
+	<!--<script src="js/foundation.min.js"></script>-->
+	<script src="js/script.js"></script>
+</body>
+</html>
