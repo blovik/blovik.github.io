@@ -12,17 +12,17 @@
     ev.preventDefault();
   });
 
-   // edit 
+   // edit =========================================
   todoList.addEventListener('click', function(el) {
-    var state = el.target;
-    var findParent = el.target.closest('li').innerHTML;
-    if (state.tagName === 'BUTTON') {
-      alert("really");
-      alert(findParent);
-
+    var oldTodo = el.target;
+    if (oldTodo.tagName === 'BUTTON') {
+      oldTodo.parentNode.lastChild.textContent = '';
+      var newTodo = prompt('Okay, what did you really want to say?');
+      newTodo = '<button class="editBtn">edit</button>' + ' ' + newTodo;
+      oldTodo.outerHTML = newTodo;
       saveListLocal();
-    };
-    ev.preventDefault();
+   };
+    el.preventDefault();
   });
 
   //ev=click, 1=checkmark, 2=delete, resave list
@@ -48,7 +48,7 @@
   // after DOM loads, check for stored list
   document.addEventListener('DOMContentLoaded', getListLocal);
   
-  // stores data forever locally
+  // stores data forever locally ==============
   function saveListLocal() {
     localStorage.todolist = todo.innerHTML;
   };
@@ -87,6 +87,14 @@ function newCalendar(id, val){
 
 // call calendar
 window.onload = calendar;
+
+// clear local memory
+function clearAll() {
+  localStorage.todolist = '';
+  location.reload();
+}
+
+
 
 
 
