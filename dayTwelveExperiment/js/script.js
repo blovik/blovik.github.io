@@ -91,6 +91,7 @@ window.onload = calendar;
 // clear local memory
 function clearAll() {
   localStorage.todolist = '';
+  location.reload();
 }
 
 
