@@ -12,21 +12,21 @@
     ev.preventDefault();
   });
 
-   // edit 
+   // edit =========================================
   todoList.addEventListener('click', function(el) {
-    var state = el.target;
+    var oldTodo = el.target;
     var findParent = el.target.closest('li').innerHTML;
     //findParent = findParent.textContent;
-    if (state.tagName === 'BUTTON') {
+    if (oldTodo.tagName === 'BUTTON') {
       alert("Seriously? You typed it wrong and now you want me to fix it. Jeez! Just add it correctly and delete this one. How lazy can you get?");
-      alert(findParent);
+      alert('findParent = ' + findParent + '\noldTodo = ' + oldTodo);
       var newTodo = prompt('Okay, what did your really want to say?');
-      //state.parentNode.remove(state);
-      todo.innerHTML += '<li class="item">' + 
-    '<button class="editBtn">edit</button>' + ' ' + newTodo + '</li>';
+      newTodo = '<button class="editBtn">edit</button>' + ' ' + newTodo;
+      //oldTodo.parentNode.remove(oldTodo);
+      oldTodo.innerHTML = newTodo;
       saveListLocal();
     };
-    ev.preventDefault();
+    el.preventDefault();
   });
 
   //ev=click, 1=checkmark, 2=delete, resave list
@@ -52,7 +52,7 @@
   // after DOM loads, check for stored list
   document.addEventListener('DOMContentLoaded', getListLocal);
   
-  // stores data forever locally
+  // stores data forever locally ==============
   function saveListLocal() {
     localStorage.todolist = todo.innerHTML;
   };
@@ -93,7 +93,10 @@ function newCalendar(id, val){
 window.onload = calendar;
 
 // clear local memory
-//localStorage.todolist = '';
+function clearAll() {
+  localStorage.todolist = '';
+}
+
 
 
 
