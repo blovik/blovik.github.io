@@ -21,6 +21,9 @@
       while (newTodo === '') {
         newTodo = prompt('Okay, what did you really want to say?');
       }
+      if (newTodo === null) {
+        newTodo = "Do dah, do dah"
+      }
       newTodo = '<button class="editBtn">edit</button>' + ' ' + newTodo;
       oldTodo.outerHTML = newTodo;
       saveListLocal();
