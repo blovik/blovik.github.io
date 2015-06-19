@@ -18,6 +18,9 @@
     if (oldTodo.tagName === 'BUTTON') {
       oldTodo.parentNode.lastChild.textContent = '';
       var newTodo = prompt('Okay, what did you really want to say?');
+      while (newTodo === '') {
+        newTodo = prompt('Okay, what did you really want to say?');
+      }
       newTodo = '<button class="editBtn">edit</button>' + ' ' + newTodo;
       oldTodo.outerHTML = newTodo;
       saveListLocal();
